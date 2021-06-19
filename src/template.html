@@ -1,14 +1,3 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> cobimr@protonmail.com
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
-    <!-- Put here your site title -->
     <title> Yevhen Krylovskyi | Developer</title>
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="keywords" content="krylenger, Yevhen Krylovskyi, developer, React, JavaScript, JS, Frontend" />
+    <meta name="description" content="[Yevhen Krylovskyi] | Developer | React | JavaScript | Frontend" />
 
-    <!-- Required librarys -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -34,15 +19,12 @@
       ScrollReveal({ reset: false });
     </script>
 
-    <!-- Remove this script once you setup your custom portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
-    <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
@@ -55,9 +37,7 @@
         </p>
       </div>
     </div>
-    <!-- /END Hero Section -->
 
-    <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
         <h2 class="section-title">
@@ -70,7 +50,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="./assets/profile.png"
+                src="./assets/profile.jpg"
                 alt="Profile Image"
               />
             </div>
@@ -78,14 +58,23 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                My name is Yevhen Krylovskyi, I'm 26 y.o. and currently I'm looking for job as a Frontend Developer. 
+                My name is Yevhen Krylovskyi, I'm 27, currently looking for a job as a Frontend Developer. 
+              </p>
+              <p class="about-wrapper__info-text">
+                My technology stack is: HTML, CSS, JS, React, Typescript*, git.
+              </p>
+              <p class="about-wrapper__info-text">
+                Also I worked with these technologies, but didn't go any deeper: NodeJS, PostgreSQL, React Native.
               </p>
               <p class="about-wrapper__info-text">
                 Looking forward to get an offer from you. 
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--resume btn-marg" href="https://docs.google.com/document/d/14OlOXZ8Y9zroMDhEIUyBKPMtTlKu0JPFsEmTpS_zBJ4/edit?usp=sharing">
                   View Resume
+                </a>
+                <a class="cta-btn cta-btn--resume btn-marg" href="#contact_section">
+                  Contact Me
                 </a>
               </span>
             </div>
@@ -93,9 +82,7 @@
         </div>
       </div>
     </section>
-    <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
@@ -103,15 +90,221 @@
             Projects
           </h2>
 
-          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Yummy Spoon</h3>
+                <div>
+                  <p class="mb-4">
+                    This project was written during Framework module of <a href="https://kottans.org/">kottans Frontend course.</a></p>
+                  <p class="mb-4">Each student had his unique app, theme of the app was chosen and written by the individual student.</p>
+                  <p class="mb-4">At first we wrote the MVP app without any framework, just using function calls and returning template strings from them to render our app. The app state was located in the window storage.</p>
+                  <p class="mb-4">After that, step by step, we've started to add some "custom framework" features to make our life easier.</p>
+                  <p class="mb-4">Such as: we split our single js file into component folders, added JSX to it, implemented custom state and useEffect hooks, added context.</p>
+                  <p class="mb-4">Only by the end of the module we've moved our projects from custom framework to React.</p>
+                  <p class="mb-4">This helped us a lot to understand the value of the framework and which problems it helps us to solve. </p>
+                  <p class="mb-4"></p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://krylenger.github.io/YummyGummy/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/krylenger/YummyGummy">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://krylenger.github.io/YummyGummy/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/banner.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Face Recognition App</h3>
+                <div>
+                  <p>This app uses Face Recognition API to detect faces from the given photos.</p>
+                  <p class="mb-4">
+                    Frontend was written on React. 
+                  </p>
+                  <p>For backend, NodeJS and Express were used.</p>
+                  <p>Database - PostgreSQL.</p>
+                  <p>Backend was added to the project to register users and remember their detection score.</p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="http://face-recognition-website.herokuapp.com/">
+                  See Live
+                </a>
+               <a target="_blank" class="cta-btn text-color-main" href="https://github.com/krylenger/face_recognition_app">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="http://face-recognition-website.herokuapp.com/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/face_recognition.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Friends App</h3>
+                <div>
+                  <p>This app uses Random User API to fetch some users data.</p>
+                  <p class="mb-4"> Project was written on pure JavaScript.</p>
+                  <p>Various sort and filter methods were implemented to find the required user.</p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://krylenger.github.io/kottans-friends/">
+                  See Live
+                </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/krylenger/kottans-friends">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://krylenger.github.io/kottans-friends/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/friends_logo.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Cinema Ticket Booking</h3>
+                <div>
+                  <p>The main aim of this app is to practice a11y and semantic skills.</p>
+                  <p>The other aim is to practice BEM methodology</p>
+                  <p>Project was written on pure JavaScript.</p> 
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://krylenger.github.io/cinema-html-css/">
+                  See Live
+                </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/krylenger/cinema-html-css">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://krylenger.github.io/cinema-html-css/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/cinema_logo.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Memory Pair Game</h3>
+                <div>
+                  <p>This fun game was mentioned by kottans mentors as one of the best and most creative and published in kottans public telegram chat (more than 2k subscribers.)</p>
+                  <p>Only around 10 PRs among nearly 400 were mentioned by mentors and published in the public chat. </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://krylenger.github.io/memory-pair-game/">
+                  See Live
+                </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/krylenger/memory-pair-game/">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://krylenger.github.io/memory-pair-game/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/music_logo.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Photographer's Gallery</h3>
+                <div>
+                  <p>This is my freelance project.</p>
+                  <p>Simple Photographer's landing and gallery.</p>
+                  <p>In this project I've learned how to work with hash during requests and responses to Yandex Money API</p>
+                  <p>In some difficult moment I contacted Yandex Money support and they helped me to set up API.</p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://amazing-northcutt-478302.netlify.app/">
+                  See Live
+                </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/krylenger/styaxa">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://amazing-northcutt-478302.netlify.app/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/camera_logo.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Choose your Motorcycle </h3>
+                <div>
+                  <p>This is a simple project to practice interactions with DOM with pure JavaScript.</p>
+                  <p>By the way, I'm in love with motorcycles!</p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://krylenger.github.io/kottans_task_js_dom/">
+                  See Live
+                </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/krylenger/kottans_task_js_dom">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://krylenger.github.io/kottans_task_js_dom/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/motorbike.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">Background Generator</h3>
                 <div>
                   <p class="mb-4">
-                    This is my very first project.
+                    This is my very first project. 
                   </p>
+                  <p>It's very simple but not less beautiful.</p> 
+                  <p>I use it regularly when I need an awesome gradient.</p> 
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://krylenger.github.io/background_generator/">
                   See Live
@@ -125,129 +318,36 @@
               <div class="project-wrapper__image">
                 <a href="https://krylenger.github.io/background_generator/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/banner.png" />
+                    <img class="img-fluid" src="./assets/background_logo.png" />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
+          
+        </div>
+      </div>
+    </section>
 
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">RoboFriends</h3>
-                <div>
-                  <p class="mb-4">
-                    The RoboApp developed with REACT.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://krylenger.github.io/robofriends/">
-                  See Live
-                </a>
-               <a target="_blank" class="cta-btn text-color-main" href="https://github.com/krylenger/robofriends">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://krylenger.github.io/robofriends/" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/logo_robo.png" />
-                  </div>
-                </a>
-              </div>
-            </div>
+    <footer class="footer navbar-static-bottom" id="contact_section">
+        <div class="container" >
+          <h2 class="section-title">
+            Contact
+          </h2>
+          <div class="contact-wrapper">
+                <p>Phone number: <a href="tel:+380938313793">+380938313793</a></p>
+                <p>E-mail: <a href="mailto:krylenger@gmail.com">krylenger@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/krylenger42">@krylenger42</a></p>
+             
+            <a
+              target="_blank"
+              class="cta-btn cta-btn--resume"
+              href="mailto:krylenger@gmail.com"
+              >Call to Action</a
+            >
           </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-         <!--  <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/banner.png" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <!-- /END Project -->
         </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
-
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">
-          Contact
-        </h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">
-            [Put your call to action here]
-          </p>
-          <a
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- /END Contact Section -->
-
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
-            <i class="fa fa-codepen fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
-
-        <hr />
-
-       
-      </div>
     </footer>
-    <!-- /END Footer Section -->
+
   </body>
 </html>
